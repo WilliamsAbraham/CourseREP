@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
-    internal class Messages
+    public class Messages
     {
     }
 }
