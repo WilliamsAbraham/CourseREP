@@ -16,6 +16,7 @@ namespace Entities.Entities
         public string Description { get; set; }
 
         public  Repo Repo { get; set; }
+        public Member Member { get; set; }
 
         [ForeignKey(nameof(Camp))]
         public int CampId { get; set; }
