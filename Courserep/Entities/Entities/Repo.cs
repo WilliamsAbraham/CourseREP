@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
-    public class Users
+    public class Repo
     {
-
+        public int Id { get; set; }
     }
 }

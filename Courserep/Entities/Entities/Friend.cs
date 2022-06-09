@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
-    internal class Docs
+    public class Friend
     {
+        public int Id { get; set; } 
     }
 }

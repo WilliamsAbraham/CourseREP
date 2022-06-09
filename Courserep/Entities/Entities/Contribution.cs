@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
-     public class CampClasses
+    public class Contribution
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-
+        public ContributionType Type { get; set; }
+      
+        public string File { get; set; }
     }
+     
+    public enum ContributionType {Video,Picture,PDF,VoiceNote}
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
-    public class Repos
+    public class Member
     {
+        public int Id { get; set; }
     }
 }
