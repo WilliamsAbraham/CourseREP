@@ -12,5 +12,6 @@ namespace Entities.Entities
         [Column("RepoId")]
         public int Id { get; set; }
         public CampClass CampClass { get; set; }
+        public ICollection<TopicDoc> TopicDocs { get; set; }
     }
 }
