@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Courserep.ExtensionService
 {
@@ -14,7 +15,8 @@ namespace Courserep.ExtensionService
            .AllowAnyMethod()));
         }
 
-
+        public static void ConfigureIISOptions(this IServiceCollection service) =>
+            service.Configure<IISOptions>(opt => { });
 
 
     }
