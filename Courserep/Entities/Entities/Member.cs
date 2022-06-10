@@ -11,9 +11,12 @@ namespace Entities.Entities
     {
         [Column("MemberId")]
         public int Id { get; set; }
+        public MemberType Type { get; set; }
 
         [ForeignKey(nameof(CampClass))]
         public int CampClassId { get; set; }
         public CampClass CampClass { get; set; }
     }
+
+    public enum MemberType { Admin, Regular}
 }
